@@ -1,3 +1,4 @@
 ---
 roles:
   - name: geerlingguy.pip # https://github.com/geerlingguy/ansible-role-pip
+  - name: geerlingguy.ntp # https://github.com/geerlingguy/ansible-role-ntp
