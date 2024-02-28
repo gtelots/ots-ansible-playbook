@@ -5,5 +5,9 @@
       apt:
         upgrade: yes
     
-    - name: Install neofetch
-      apt: name=neofetch state=present
+    - name: Install basic packages
+      package:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - neofetch
