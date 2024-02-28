@@ -1,13 +1,4 @@
 - hosts: all
   become: true
-  tasks:
-    - name: Update apt packages
-      apt:
-        upgrade: yes
-    
-    - name: Install basic packages
-      package:
-        name: "{{ item }}"
-        state: present
-      loop:
-        - neofetch
+  roles:
+    - role: geerlingguy.ntp
