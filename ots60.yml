@@ -1,0 +1,8 @@
+- hosts: ots60
+  gather_facts: true
+  become: true
+
+  tasks:
+    - name: Update all packages
+      apt:
+        upgrade: yes
