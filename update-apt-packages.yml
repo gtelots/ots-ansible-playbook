@@ -4,3 +4,6 @@
     - name: Update apt packages
       apt:
         upgrade: yes
+    
+    - name: Install neofetch
+      apt: name=neofetch state=present
